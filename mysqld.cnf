@@ -57,8 +57,9 @@ max_connections         = 500
 #
 # * Query Cache Configuration
 #
-query_cache_limit       = 1M
-query_cache_size        = 16M
+query_cache_limit       = 768K
+query_cache_size        = 0
+query_cache_type        = 0
 #
 # * Logging and Replication
 #
@@ -104,3 +105,4 @@ max_binlog_size   = 100M
 # ssl-cert=/etc/mysql/server-cert.pem
 # ssl-key=/etc/mysql/server-key.pem
 max_allowed_packet = 32505856
+innodb_log_file_size = 16M
